@@ -3,6 +3,7 @@ resources:
 
 patches:
 - path: manifests/broadcaster/deployment.yaml
+- path: manifests/configMap.yaml
 
 namespace: todo-staging
 

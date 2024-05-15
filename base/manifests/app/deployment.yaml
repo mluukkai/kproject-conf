@@ -27,6 +27,11 @@ spec:
                 configMapKeyRef:
                   name: todo-generic-conf
                   key: BACKEND_URL
+            - name: ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: todo-generic-conf
+                  key: ENV
           volumeMounts:
             - mountPath: /app/pics
               name: project-data
