@@ -21,6 +21,11 @@ spec:
               configMapKeyRef:
                 name: todo-generic-conf
                 key: NATS_URL
+          - name: ENV
+            valueFrom:
+              configMapKeyRef:
+                name: todo-generic-conf
+                key: ENV
           - name: DISCORD_WEBHOOK
             valueFrom:
               secretKeyRef:
