@@ -10,18 +10,18 @@ namespace: todo-staging
 images:
 - name: PROJECT/APP_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-app
-  newTag: 19f6e90c84a7ef50d06883795ea3f658967dd773
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BACKUP_IMAGE
   newName: gcr.io/dwk-gke-420519/backup-cron
-  newTag: 19f6e90c84a7ef50d06883795ea3f658967dd773
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BE_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-backend
-  newTag: 19f6e90c84a7ef50d06883795ea3f658967dd773
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BRDC_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-broadcaster
-  newTag: 19f6e90c84a7ef50d06883795ea3f658967dd773
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/CRON_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-cron
-  newTag: 19f6e90c84a7ef50d06883795ea3f658967dd773
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
