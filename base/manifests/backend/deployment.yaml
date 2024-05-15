@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-backend-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-backend
+  template:
+    metadata:
+      labels:
+        app: todo-backend
+    spec:  
+      containers:
+        - name: todo-backend
+          image: PROJECT/BE_IMAGE
+          env:
+          - name: DB_URL
+            valueFrom:
+              configMapKeyRef:
+                name: todo-generic-conf
+                key: DB_URL
+          - name: NATS_URL
+            valueFrom:
+              configMapKeyRef:
+                name: todo-generic-conf
+                key: NATS_URL
+          resources:
+            limits:
+              cpu: "150m"
+              memory: "500Mi"
+            requests:
+              cpu: "015m"
+              memory: "100Mi"
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 1
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 2      

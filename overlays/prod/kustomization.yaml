@@ -1,0 +1,5 @@
+resources:
+- ./../../base
+- ./manifests/bu-cron.yaml
+
+namespace: todo-prod

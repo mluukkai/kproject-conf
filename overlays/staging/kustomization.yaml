@@ -1,0 +1,7 @@
+resources:
+- ./../../base
+
+patches:
+  - path: manifests/broadcaster/deployment.yaml
+
+namespace: todo-staging
