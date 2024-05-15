@@ -4,20 +4,4 @@ metadata:
   name: todo-app-ingress
 spec:
   ingressClassName: nginx
-  rules:
-  - http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: todo-app-svc
-            port:
-              number: 80        
-      - path: /todos
-        pathType: Prefix
-        backend:
-          service:
-            name: todo-backend-svc
-            port:
-              number: 80       
+  
