@@ -1,5 +1,10 @@
 resources:
 - ./../../base
 - ./manifests/bu-cron.yaml
-
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 namespace: todo-prod
+images:
+- name: PROJECT/BE_IMAGE
+  newName: gcr.io/dwk-gke-420519/todo-backend
+  newTag: de2e679f8c7f9e2839d7998fac3aa27c7d3d33a3
