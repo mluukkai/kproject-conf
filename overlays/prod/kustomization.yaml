@@ -7,13 +7,17 @@ namespace: todo-prod
 
 images:
 - name: PROJECT/APP_IMAGE
-  newName: gcr.io/dwk-gke-420519/todo-app:1
+  newName: gcr.io/dwk-gke-420519/todo-app
+  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
 - name: PROJECT/BACKUP_IMAGE
-  newName: gcr.io/dwk-gke-420519/backup-cron:1
+  newName: gcr.io/dwk-gke-420519/backup-cron
+  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
 - name: PROJECT/BE_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-backend
-  newTag: a905214bffe413a357b38da81eb0fd561da329ec
+  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
 - name: PROJECT/BRDC_IMAGE
-  newName: gcr.io/dwk-gke-420519/todo-broadcaster:1
+  newName: gcr.io/dwk-gke-420519/todo-broadcaster
+  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
 - name: PROJECT/CRON_IMAGE
-  newName: gcr.io/dwk-gke-420519/todo-cron:1
+  newName: gcr.io/dwk-gke-420519/todo-cron
+  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
