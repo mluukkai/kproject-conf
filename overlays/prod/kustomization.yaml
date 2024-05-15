@@ -6,21 +6,21 @@ kind: Kustomization
 namespace: todo-prod
 
 patches:
-  - path: manifests/configMap.yaml
+- path: manifests/configMap.yaml
 
 images:
 - name: PROJECT/APP_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-app
-  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BACKUP_IMAGE
   newName: gcr.io/dwk-gke-420519/backup-cron
-  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BE_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-backend
-  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/BRDC_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-broadcaster
-  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
 - name: PROJECT/CRON_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-cron
-  newTag: 2dd8d623599ad812bace0c5c90f742e8dc3bff92
+  newTag: 9d56775fcac5792861bb672ee8f3fde06a5802f9
