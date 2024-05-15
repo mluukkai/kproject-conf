@@ -5,3 +5,13 @@ patches:
   - path: manifests/broadcaster/deployment.yaml
 
 namespace: todo-staging
+
+images:
+- name: PROJECT/APP_IMAGE
+  newName: gcr.io/dwk-gke-420519/todo-app:1
+- name: PROJECT/BE_IMAGE
+  newName: gcr.io/dwk-gke-420519/todo-backend:1
+- name: PROJECT/BRDC_IMAGE
+  newName: gcr.io/dwk-gke-420519/todo-broadcaster:1
+- name: PROJECT/CRON_IMAGE
+  newName: gcr.io/dwk-gke-420519/todo-cron:1
