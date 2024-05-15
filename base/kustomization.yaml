@@ -7,7 +7,7 @@ images:
   newName: gcr.io/dwk-gke-420519/backup-cron:1
 - name: PROJECT/BE_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-backend
-  newTag: d95d618afb1d6c014f782f1ec2534b031ed946b5
+  newTag: a905214bffe413a357b38da81eb0fd561da329ec
 - name: PROJECT/BRDC_IMAGE
   newName: gcr.io/dwk-gke-420519/todo-broadcaster:1
 - name: PROJECT/CRON_IMAGE
